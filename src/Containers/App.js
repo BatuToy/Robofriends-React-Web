@@ -33,7 +33,7 @@ class App extends Component{
             return robot.name.toLowerCase().includes(searchfield.toLowerCase());
         });
         return !robots.length ?
-            <h2>Loading</h2> :
+            <h1  id="SegaLogo" className="tc">Loading...</h1> :
             <div className="tc">
                 <h1 id="SegaLogo">RoboFriends</h1>
                 <SearchBox searchChange = {this.onSearchChange}/>
